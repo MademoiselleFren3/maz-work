@@ -1,0 +1,17 @@
+Unknown
+# Define planet's distance from the Sun in astronomical units (AU)
+planet_distances = {
+    "Mercury": 0.387,
+    "Venus": 0.723,
+    "Earth": 1.000,
+    "Mars": 1.524,
+    "Jupiter": 5.203,
+    "Saturn": 9.582,
+    "Uranus": 19.18,
+    "Neptune": 30.07
+}
+
+# Calculate the square of each planet's distance from the Sun
+for planet, distance in planet_distances.items():
+    square_distance = distance**2
+    print(f"{planet}: {square_distance}")
